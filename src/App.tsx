@@ -236,6 +236,8 @@ export default class App extends React.PureComponent<Props, State> {
 
   componentDidMount() {
     console.log('DEBUG: answer is: ' + this.state.answer);
+    console.log('DEBUG: example words: ');
+    console.log(JSON.stringify(WORD_LIST.slice(0, 20), null, 4));
     document.addEventListener('keypress', this.onKeyboardPress);
   }
 
